@@ -1,0 +1,11 @@
+from django.db import models
+
+class StaffBase(models.Model):
+    name= models.charField(max_length=100)
+    email= models.ExamField()
+    has_company_card=
+models.BooleanField(default=False)
+  intership_ends = models.DataField()
+
+def get_role(self):
+   return"staff"
